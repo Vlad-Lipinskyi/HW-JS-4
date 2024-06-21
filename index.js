@@ -1,79 +1,89 @@
-// const messageOne = prompt("будь ласка напишіть щось!");
-// const messageTwo = prompt("будь ласка напишіть щось!");
+//Завдання 1
 
-// if (!messageOne || !messageTwo === ""){
-//   alert("Ви не заповнили поля!");
-// } else {
-//   alert("Поля заповнені!");
-// };
+const messageOne = prompt("будь ласка напишіть щось!");
+const messageTwo = prompt("будь ласка напишіть щось!");
 
-// let numberOne = prompt("Введіть перше число!");
-// let numberTwo = prompt("Введіть друге число!");
+if (!messageOne || !messageTwo === ""){
+  alert("Ви не заповнили поля!");
+} else {
+  alert("Поля заповнені!");
+};
 
-// numberOne = Number(numberOne);
-// numberTwo = Number(numberTwo);
+//Завдання 2
 
-// const sumNumbers = numberOne + numberTwo;
+let numberOne = prompt("Введіть перше число!");
+let numberTwo = prompt("Введіть друге число!");
 
-// if (sumNumbers > 10){
-//   alert("Сума більша за 10");
-// } else {
-//   alert("Сума менше за 10 або дорівнює 10");
-// };
+numberOne = Number(numberOne);
+numberTwo = Number(numberTwo);
 
-// const text = prompt("Напишіть JavaScript")
+const sumNumbers = numberOne + numberTwo;
 
-// if (text.includes("JavaScript")) {
-//     alert("Текст містить слово JavaScript");
-// } else {
-//     alert("Текст не містить слово JavaScript");
-// }
+if (sumNumbers > 10){
+  alert("Сума більша за 10");
+} else {
+  alert("Сума менше за 10 або дорівнює 10");
+};
 
-// const messageNumber = prompt("Впишіть число від 1 до 100");
+//Завдання 3
 
-// if (messageNumber > 10 && messageNumber < 20) {
-//   alert("Число входить в діапазон від 10 до 20");
-// } else {
-//     alert("Число не входить в діапазон від 10 до 20")
-// }
+const text = prompt("Напишіть JavaScript")
 
-const userName = 'kleryxx';
-const email = 'vlad.lipinkiy@gmail.com';
-const password = '111111';
+if (text.includes("JavaScript")) {
+    alert("Текст містить слово JavaScript");
+} else {
+    alert("Текст не містить слово JavaScript");
+}
 
-let messageUserName = prompt("Введіть Ім'я! Ім'я містить не менше 3 символів, ")
-let messageEmail = prompt("Введіть електрону пошту! електрона пошта містить символ @ та крапку після неї")
-let messagePassword = prompt("Введіть пароль! Пароль містить не менше 6 символів.")
+//Завдання 4
+
+const messageNumber = prompt("Впишіть число від 1 до 100");
+
+if (messageNumber > 10 && messageNumber < 20) {
+  alert("Число входить в діапазон від 10 до 20");
+} else {
+    alert("Число не входить в діапазон від 10 до 20")
+}
+
+//Завдання 5
+
+const userName = "kleryxx";
+const email = "vlad.lipinkiy@gmail.com";
+const password = "111111";
+
+let messageUserName = prompt("Введіть Ім'я!");
+let messageEmail = prompt("Введіть електрону пошту!");
+let messagePassword = prompt("Введіть пароль!");
 
 const userNameLength = userName.length;
-const emailFirstNeed = email.indexOf('@');
-const emailSecondNeed = email.indexOf('.');
+const emailFirstNeed = email.indexOf("@");
+const emailSecondNeed = email.indexOf(".");
 const passwordLength = password.length;
 
-// let firstCondition = '';
-// let secondCondition = '';
-// let thirdCondition = '';
+let firstCondition = "";
+let secondCondition = "";
+let thirdCondition = "";
 
-if (userNameLength >= 3){ 
+if (userNameLength >= 3) {
   firstCondition = true;
 } else {
   firstCondition = false;
-};
+}
 
-if (emailFirstNeed >= 1 && emailSecondNeed >= 1) { 
-  secondCondition = true; 
-} else { 
-  secondCondition = false; 
-};
+if (emailFirstNeed >= 1 && emailSecondNeed >= 1) {
+  secondCondition = true;
+} else {
+  secondCondition = false;
+}
 
-if (passwordLength >= 6){
-  thirdCondition = true; 
-} else { 
+if (passwordLength >= 6) {
+  thirdCondition = true;
+} else {
   thirdCondition = false;
-};
+}
 
-if (firstCondition === true && secondCondition === true && thirdCondition === true){
-  alert('Через секунду вас перенаправить на іншу сторінку!');
-} else { 
-  alert('Данні заповнені неправильно');
+if (firstCondition && secondCondition && thirdCondition === true) {
+  alert("Зараз Вас перенаправить на іншу сторінку!");
+} else {
+  alert("Помилка! Данні заповнені неправильно");
 }
